@@ -73,3 +73,21 @@ brew install python nmap git
 
 # Windows (with WSL recommended)
 # Install WSL2, then follow Linux instructions
+
+# Clone the repository
+git clone https://github.com/yourusername/kenumerator-pro.git
+cd kenumerator-pro
+
+# Install Python dependencies
+pip3 install -r requirements.txt
+
+# Optional: Install recommended tools
+pip3 install paramiko impacket pysnmp networkx matplotlib
+
+# Option 1: Full SecLists (500MB+)
+git clone --depth 1 https://github.com/danielmiessler/SecLists.git seclists
+
+# Option 2: Run setup from within KEnumerator
+sudo python3 kenumerator_pro.py
+# Then select Option 20 → Download Specific Wordlists
+
